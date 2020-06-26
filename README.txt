@@ -1,0 +1,5 @@
+dianxin：数据生产
+kafka_hbase：数据采集
+hbase_mysql：数据分析
+flume-kafka：flume配置文件
+hase_mysql中，CountDriver.java是分析年月日的，IntymacyDriver.java和PreIntymacyDriver.java是分析亲密度的
