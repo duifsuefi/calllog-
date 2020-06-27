@@ -81,6 +81,7 @@ public class CountDriver implements Tool {
 			// TODO Auto-generated method stub
 			String rowKey = Bytes.toString(key.get());
 			rowKey=rowKey.substring(3);
+			//rowKey=13162629996 ’‘∫∆∏Ë 13042089546 ¡ı‹≠ 2020-06-19 03:04:59 1592550299448 5011 1
 			String[] info=rowKey.split(" ");
 			if("1".equals(info[8])) {
 				outValue.set(info[1]+" "+info[2]+" "+info[3]+" "+info[7]+" "+info[8]);
