@@ -77,6 +77,7 @@ public class Main {
 			List<Put> puts = new ArrayList<Put>();
 			for (ConsumerRecord<String, String> record : records) {
 				String str=record.value();
+				//str=13162629996,’‘∫∆∏Ë,13042089546,¡ı‹≠,2020-06-19 03:04:59,1592550299448,5011
 				String[] info=str.split(",");
 				String rowKey=(info[4].substring(0,10).hashCode()+info[0].hashCode())%3+"_"+info[0]+" "+info[1]+" "+info[2]+" "+info[3]+" "+info[4]+" "+info[5]+" "+info[6]+" "+"1";
 				if(rowKey.charAt(0)=='-') rowKey=rowKey.substring(1);
